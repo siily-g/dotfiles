@@ -3,6 +3,9 @@ setopt autocd               # Automatically change directory when only file path
 setopt interactivecomments  # Allows comments in interactive shells 
 unsetopt beep               # Disable beeping in errors
 
+# Prompt
+eval "$(starship init zsh)"
+
 # History
 setopt appendhistory        # Multiple terminal sessions append to one zsh command history
 setopt histignoredups       # Ignores duplicate in history

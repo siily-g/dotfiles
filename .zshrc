@@ -74,9 +74,6 @@ alias v=$EDITOR                                                 # Opens editor
 alias b=$BROWSER                                                # Opens browser
 
 
-eval "$(sheldon source)"
-
-
 # Run these at start
 fastfetch
 #!/bin/zsh -f

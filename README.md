@@ -25,4 +25,4 @@ Eitherway I'm talking to practically no one right now so bye
  - [ ] Add screenshots
  - [ ] Make an actually clear readme
 
-.. and more! (I'm really lazy making more things in the todo list lol I'll add it later I think
+.. and more! (I'm really lazy making more things in the todo list lol I'll add it later I think)

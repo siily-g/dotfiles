@@ -11,17 +11,23 @@ Eitherway I'm talking to practically no one right now so bye
 ##### Hyprland
  - [ ] Wallpaper
  - [ ] Hypridle + Hyprlock
- - [ ] Separate Hyprland config
+ - [ ] Separate the Hyprland config
+ - [ ] 
 ##### Alacritty
- Coming soon!
-##### Astal
+ - [ ] Fonts
+##### Ags Astal
  - [ ] Status bar
+ - [ ] Status bar: Workspace
+ - [ ] Status bar: Media player
+ - [ ] Status bar: System tray
  - [ ] App launcher
 ##### NeoVim
- Coming soon!
-##### This readme
+ - [ ] Basic init.lua config
+ - [ ] Install package manager
+ - [ ] Plugins time
+##### This readme itself
  - [x] Add To-do list
- - [ ] Expand the To-do list
+ - [x] Expand the To-do list
  - [ ] Add screenshots
  - [ ] Make an actually clear readme
 

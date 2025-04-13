@@ -8,6 +8,10 @@ unsetopt beep               # Disable beeping in errors
 # Prompt
 eval "$(starship init zsh)"
 
+# Auto suggestion and highlighting like fish shell, see https://wiki.archlinux.org/title/Zsh#Fish-like_syntax_highlighting_and_autosuggestions
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # History
 setopt appendhistory        # Multiple terminal sessions append to one zsh command history
 setopt histignoredups       # Ignores duplicate in history

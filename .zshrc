@@ -1,6 +1,8 @@
 # Basic Setopts and Unsetopts
 setopt autocd               # Automatically change directory when only file path is given
 setopt interactivecomments  # Allows comments in interactive shells 
+setopt correct              # Enable correction
+setopt correctall           # Same as above
 unsetopt beep               # Disable beeping in errors
 
 # Prompt

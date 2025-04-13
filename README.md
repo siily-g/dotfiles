@@ -13,14 +13,16 @@ Eitherway I'm talking to practically no one right now so bye
  - [ ] Hypridle + Hyprlock
  - [ ] Separate Hyprland config
 ##### Alacritty
+ Coming soon!
 ##### Astal
  - [ ] Status bar
  - [ ] App launcher
 ##### NeoVim
+ Coming soon!
 ##### This readme
  - [x] Add To-do list
  - [ ] Expand the To-do list
  - [ ] Add screenshots
  - [ ] Make an actually clear readme
 
-.. and more! (I'm really lazy making more things in the todo list lol I'll add it later I think
+.. and more! (I'm really lazy making more things in the todo list lol I'll add it later I thiCk

@@ -88,6 +88,7 @@ key[Shift-Tab]="${terminfo[cbt]}" # Sets <Shift-Tab> key combination
 # abbr cl="clear"                                                               # The same as above, but just clears
 # abbr gco="git status"                                                         # Not git checkout but gs is taken
 # abbr gpo="git push origin"                                                    # Git push
+abbr --force gcam="git commit -am"
 
 
 # Run these at start

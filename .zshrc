@@ -1,3 +1,20 @@
+# Zgenom plugin manager
+source "${HOME}/.zgenom/zgenom.zsh"
+# Check for plugin and zgenom updates every 7 days
+zgenom autoupdate
+
+if ! zgenom saved; then
+  # Loading plugins
+  zgenom load olets/zsh-abbr                # Abbreviation, like alias but better
+  zgenom load zsh-users/zsh-autosuggestions # Auto suggestions
+  zgenom load zsh-users/zsh-syntax-highlighting # Syntax highlighting like in fish
+
+  zgenom save
+  zgenom compile .zshrc
+  clear                                     # I know this one, it just clears so I don't see the plugin loading mess
+fi
+
+
 # Basic Setopts and Unsetopts
 setopt autocd               # Automatically change directory when only file path is given
 setopt interactivecomments  # Allows comments in interactive shells 
@@ -8,11 +25,6 @@ unsetopt beep               # Disable beeping in errors
 
 # Prompt
 eval "$(starship init zsh)"
-
-
-# Auto suggestion and highlighting like fish shell, see https://wiki.archlinux.org/title/Zsh#Fish-like_syntax_highlighting_and_autosuggestions
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
 # History
@@ -65,13 +77,17 @@ key[Shift-Tab]="${terminfo[cbt]}" # Sets <Shift-Tab> key combination
 [[ -n "${key[Shift-Tab]}" ]] && bindkey -- "${key[Shift-Tab]}"  menu-complete                  # For completion menu
 
 
-# Aliases
-alias ls="ls -GFw30 --color=auto"                               # Instead it ignores groups, add file type indicator, and columns it.
-alias lsa="ls -GFaw30 --color=auto"                             # The same as above, but list everything
-alias c="clear;fastfetch;echo 'Arch is the best!'"              # Make it easy and fast to clear, fastfetch, and say truth ;) https://wiki.archlinux.org/title/Arch_is_the_best
-alias cl="clear"                                                # The same as above, but just clears
-alias v=$EDITOR                                                 # Opens editor
-alias b=$BROWSER                                                # Opens browser
+# Abbreviations (like alias but better)
+# Uncomment these if you want the same config
+
+# abbr --force ls="eza -TF --group-directories-first -L 2 --icons --git"        # eza is better ls, tree view the file with depth level 2, file type indicator, files first, icons and git
+# abbr lsa="eza -ATF --group-directories-first -L 2 --icons --git"              # allat above but almost all
+# abbr --force ll="eza -hlbmTUF --group-directories-first -L 2 --icons --git"   # like below but not all
+# abbr --force lla="eza -hlbmTUAF --group-directories-first -L 2 --icons --git"         # shows heading, long display, file size, time of creation and modification, almost all files, add file type indicator, files first, icon and git compatible
+# abbr c="clear;fastfetch;echo 'Arch is the best!'"                             # Make it easy and fast to clear, fastfetch, and say truth ;) https://wiki.archlinux.org/title/Arch_is_the_best
+# abbr cl="clear"                                                               # The same as above, but just clears
+# abbr gco="git status"                                                         # Not git checkout but gs is taken
+# abbr gpo="git push origin"                                                    # Git push
 
 
 # Run these at start

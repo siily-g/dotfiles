@@ -3,17 +3,10 @@ source "${HOME}/.zgenom/zgenom.zsh"
 # Check for plugin and zgenom updates every 7 days
 zgenom autoupdate
 
-if ! zgenom saved; then
-  # Loading plugins
-  zgenom load olets/zsh-abbr                # Abbreviation, like alias but better
-  zgenom load zsh-users/zsh-autosuggestions # Auto suggestions
-  zgenom load zsh-users/zsh-syntax-highlighting # Syntax highlighting like in fish
-
-  zgenom save
-  zgenom compile .zshrc
-  clear                                     # I know this one, it just clears so I don't see the plugin loading mess
-fi
-
+zgenom load olets/zsh-abbr                # Abbreviation, like alias but better
+zgenom load zsh-users/zsh-autosuggestions # Auto suggestions
+zgenom load zsh-users/zsh-syntax-highlighting # Syntax highlighting like in fish
+clear                                     # So I don't see the mess
 
 # Basic Setopts and Unsetopts
 setopt autocd               # Automatically change directory when only file path is given
@@ -84,11 +77,11 @@ key[Shift-Tab]="${terminfo[cbt]}" # Sets <Shift-Tab> key combination
 # abbr lsa="eza -ATF --group-directories-first -L 2 --icons --git"              # allat above but almost all
 # abbr --force ll="eza -hlbmTUF --group-directories-first -L 2 --icons --git"   # like below but not all
 # abbr --force lla="eza -hlbmTUAF --group-directories-first -L 2 --icons --git"         # shows heading, long display, file size, time of creation and modification, almost all files, add file type indicator, files first, icon and git compatible
-# abbr c="clear;fastfetch;echo 'Arch is the best!'"                             # Make it easy and fast to clear, fastfetch, and say truth ;) https://wiki.archlinux.org/title/Arch_is_the_best
-# abbr cl="clear"                                                               # The same as above, but just clears
+# abbr --force c="clear;fastfetch;echo 'Arch is the best!'"                             # Make it easy and fast to clear, fastfetch, and say truth ;) https://wiki.archlinux.org/title/Arch_is_the_best
+# abbr --force cl="clear"                                                               # The same as above, but just clears
 # abbr gco="git status"                                                         # Not git checkout but gs is taken
 # abbr gpo="git push origin"                                                    # Git push
-abbr --force gcam="git commit -am"
+# abbr --force gcam="git commit -am"
 
 
 # Run these at start

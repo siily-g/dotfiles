@@ -11,6 +11,8 @@ if ! zgenom saved; then
   zgenom compile .zshrc
 fi
 
+source ~/zsh-syntax-highlighting/themes/catppuccin_frappe-zsh-syntax-highlighting.zsh # Catppuccin for syntax highlighting cuz why not :3
+
 
 # Basic Setopts and Unsetopts
 setopt autocd               # Automatically change directory when only file path is given

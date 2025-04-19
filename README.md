@@ -7,12 +7,13 @@ Eitherway I'm talking to practically no one right now so bye
 ##### Zsh
  - [x] .zshrc config
  - [x] starship prompt
+ - [x] plugins
 ##### Hyprland
- - [ ] Wallpaper
- - [ ] Hypridle + Hyprlock
- - [ ] Separate the Hyprland config
+ - [x] wallpaper
+ - [x] hypridle + hyprlock
+ - [ ] actually configure hyprland
 ##### Alacritty
- - [ ] Fonts
+ - [ ] fonts
 ##### Ags Astal
  - [ ] Status bar
  - [ ] Status bar: Workspace

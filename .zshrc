@@ -11,7 +11,7 @@ if ! zgenom saved; then
   zgenom compile .zshrc
 fi
 
-source ~/zsh-syntax-highlighting/themes/catppuccin_frappe-zsh-syntax-highlighting.zsh # Catppuccin for syntax highlighting cuz why not :3
+source /home/sillyg/catppuccin/zsh-syntax-highlighting/themes/catppuccin_frappe-zsh-syntax-highlighting.zsh # Catppuccin for syntax highlighting cuz why not :3
 
 
 # Basic Setopts and Unsetopts

@@ -77,16 +77,21 @@ key[Shift-Tab]="${terminfo[cbt]}" # Sets <Shift-Tab> key combination
 
 
 # Aliases
-alias ls="eza -TF --group-directories-first -L 2 --icons --git"        # eza is better ls, tree view the file with depth level 2, file type indicator, files first, icons and git
-alias lsa="eza -ATF --group-directories-first -L 2 --icons --git"      # allat above but almost all
-alias ll="eza -hlbmTUF --group-directories-first -L 2 --icons --git"   # like below but not all
-alias lla="eza -hlbmTUAF --group-directories-first -L 2 --icons --git" # shows heading, long display, file size, time of creation and modification, almost all files, add file type indicator, files first, icon and git compatible
-alias c="clear;fastfetch;echo 'Arch is the best!'"                     # Make it easy and fast to clear, fastfetch, and say truth ;) https://wiki.archlinux.org/title/Arch_is_the_best
-alias cl="clear"                                                       # The same as above, but just clears
-alias gco="git status"                                                 # Not git checkout but gs is taken
-alias gpo="git push origin"                                            # Git push
-alias vpnstart="wg-quick up /etc/wireguard/ne.conf"                    # 
-alias vpnstop="wg-quick down /etc/wireguard/ne.conf"                   # Vpn
+# Basic commands
+alias el="eza -TF --group-directories-first -L 3 --icons --git"         # eza is better ls, tree view the file with depth level 2, file type indicator, files first, icons and git
+alias ela="eza -ATF --group-directories-first -L 3 --icons --git"       # allat above but almost all
+alias ell="eza -hlbmTUF --group-directories-first -L 3 --icons --git"   # like below but not all
+alias ella="eza -hlbmTUAF --group-directories-first -L 3 --icons --git" # shows heading, long display, file size, time of creation and modification, almost all files, add file type indicator, files first, icon and git compatible
+
+# Utilities
+alias c="clear;fastfetch;echo 'Arch is the best!'"                      # Make it easy and fast to clear, fastfetch, and say truth ;) https://wiki.archlinux.org/title/Arch_is_the_best
+alias cl="clear"                                                        # The same as above, but just clears
+alias gco="git status"                                                  # Not git checkout but gs is taken
+alias gpo="git push origin"                                             # Git push
+
+# Vpn
+alias vpnstart="wg-quick up /etc/wireguard/ne.conf"                     
+alias vpnstop="wg-quick down /etc/wireguard/ne.conf"                   
 
 
 # Run these at start

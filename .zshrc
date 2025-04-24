@@ -8,6 +8,7 @@ if ! zgenom saved; then
   zgenom load olets/zsh-abbr
   zgenom load zsh-users/zsh-autosuggestions     # Auto suggestions like in fish
   zgenom load zsh-users/zsh-syntax-highlighting # Syntax highlighting like in fish
+  zgenom load zsh-users/zsh-history-substring-search 
 
   zgenom compile .zshrc
   clear                                         # So I don't see the mess
@@ -82,23 +83,25 @@ key[Shift-Tab]="${terminfo[cbt]}" # Sets <Shift-Tab> key combination
 # Commented out, uncomment once to have a similar setup
 
 # Basic commands
-abbr grep="grep --color=auto"
-abbr el="eza -TF --group-directories-first -L 3 --icons --git"         # eza is better ls, tree view the file with depth level 2, file type indicator, files first, icons and git
-abbr ela="eza -ATF --group-directories-first -L 3 --icons --git"       # allat above but almost all
-abbr ell="eza -hlbmTUF --group-directories-first -L 3 --icons --git"   # like below but not all
-abbr ella="eza -hlbmTUAF --group-directories-first -L 3 --icons --git" # shows heading, long display, file size, time of creation and modification, almost all files, add file type indicator, files first, icon and git compatible
+alias grep="grep --color=auto"                                                   # Alias because actually I don't know how to explain it
+# abbr --force ls="eza -TF --group-directories-first -L 3 --icons --git"         # eza is better ls, tree view the file with depth level 2, file type indicator, files first, icons and git
+# abbr --force lsa="eza -ATF --group-directories-first -L 3 --icons --git"       # allat above but almost all
+# abbr --force ll="eza -hlbmTUF --group-directories-first -L 3 --icons --git"    # like below but not all
+# abbr --force lla="eza -hlbmTUAF --group-directories-first -L 3 --icons --git"  # shows heading, long display, file size, time of creation and modification, almost all files, add file type indicator, files first, icon and git compatible
 
-# Utilities
-abbr c="clear;fastfetch;echo 'Arch is the best!'"                      # Make it easy and fast to clear, fastfetch, and say truth ;) https://wiki.archlinux.org/title/Arch_is_the_best
-abbr cl="clear"                                                        # The same as above, but just clears
-abbr gts="git status"                                                  # Not git checkout but gs is taken
-abbr gtc="git commit -m '"
-abbr gtca="git commit -am '"
-abbr gtp="git push origin"                                             # Git push
+# Clear
+# abbr --force c="clear;fastfetch;echo 'Arch is the best!'"                      # Make it easy and fast to clear, fastfetch, and say truth ;) https://wiki.archlinux.org/title/Arch_is_the_best
+# abbr --force cl="clear"                                                        # The same as above, but just clears
+
+# Git
+# abbr --force gts="git status"    
+# abbr --force gtc="git commit -m"
+# abbr --force gtca="git commit -am"
+# abbr --force gtp="git push origin"
 
 # Vpn
-abbr vpnstart="wg-quick up /etc/wireguard/ne.conf"                     
-abbr vpnstop="wg-quick down /etc/wireguard/ne.conf"                   
+# abbr --force vpnstart="wg-quick up /etc/wireguard/ne.conf"                     
+# abbr --force vpnstop="wg-quick down /etc/wireguard/ne.conf"                   
 
 # Run these at start
 fastfetch

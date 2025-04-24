@@ -5,10 +5,12 @@ zgenom autoupdate
 
 
 if ! zgenom saved; then
+  zgenom load olets/zsh-abbr
   zgenom load zsh-users/zsh-autosuggestions     # Auto suggestions like in fish
   zgenom load zsh-users/zsh-syntax-highlighting # Syntax highlighting like in fish
-  clear                                         # So I don't see the mess
+
   zgenom compile .zshrc
+  clear                                         # So I don't see the mess
 fi
 
 source /home/sillyg/catppuccin/zsh-syntax-highlighting/themes/catppuccin_frappe-zsh-syntax-highlighting.zsh # Catppuccin for syntax highlighting cuz why not :3
@@ -76,23 +78,27 @@ key[Shift-Tab]="${terminfo[cbt]}" # Sets <Shift-Tab> key combination
 [[ -n "${key[Shift-Tab]}" ]] && bindkey -- "${key[Shift-Tab]}"  menu-complete                  # For completion menu
 
 
-# Aliases
+# Abbreviations, like aliases but better
+# Commented out, uncomment once to have a similar setup
+
 # Basic commands
-alias el="eza -TF --group-directories-first -L 3 --icons --git"         # eza is better ls, tree view the file with depth level 2, file type indicator, files first, icons and git
-alias ela="eza -ATF --group-directories-first -L 3 --icons --git"       # allat above but almost all
-alias ell="eza -hlbmTUF --group-directories-first -L 3 --icons --git"   # like below but not all
-alias ella="eza -hlbmTUAF --group-directories-first -L 3 --icons --git" # shows heading, long display, file size, time of creation and modification, almost all files, add file type indicator, files first, icon and git compatible
+abbr grep="grep --color=auto"
+abbr el="eza -TF --group-directories-first -L 3 --icons --git"         # eza is better ls, tree view the file with depth level 2, file type indicator, files first, icons and git
+abbr ela="eza -ATF --group-directories-first -L 3 --icons --git"       # allat above but almost all
+abbr ell="eza -hlbmTUF --group-directories-first -L 3 --icons --git"   # like below but not all
+abbr ella="eza -hlbmTUAF --group-directories-first -L 3 --icons --git" # shows heading, long display, file size, time of creation and modification, almost all files, add file type indicator, files first, icon and git compatible
 
 # Utilities
-alias c="clear;fastfetch;echo 'Arch is the best!'"                      # Make it easy and fast to clear, fastfetch, and say truth ;) https://wiki.archlinux.org/title/Arch_is_the_best
-alias cl="clear"                                                        # The same as above, but just clears
-alias gco="git status"                                                  # Not git checkout but gs is taken
-alias gpo="git push origin"                                             # Git push
+abbr c="clear;fastfetch;echo 'Arch is the best!'"                      # Make it easy and fast to clear, fastfetch, and say truth ;) https://wiki.archlinux.org/title/Arch_is_the_best
+abbr cl="clear"                                                        # The same as above, but just clears
+abbr gts="git status"                                                  # Not git checkout but gs is taken
+abbr gtc="git commit -m '"
+abbr gtca="git commit -am '"
+abbr gtp="git push origin"                                             # Git push
 
 # Vpn
-alias vpnstart="wg-quick up /etc/wireguard/ne.conf"                     
-alias vpnstop="wg-quick down /etc/wireguard/ne.conf"                   
-
+abbr vpnstart="wg-quick up /etc/wireguard/ne.conf"                     
+abbr vpnstop="wg-quick down /etc/wireguard/ne.conf"                   
 
 # Run these at start
 fastfetch

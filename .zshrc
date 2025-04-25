@@ -3,16 +3,13 @@ source "${HOME}/.zgenom/zgenom.zsh"
 # Check for plugin and zgenom updates every 7 days
 zgenom autoupdate
 
+zgenom load olets/zsh-abbr                         # Abbreviations, better alias
+zgenom load zsh-users/zsh-autosuggestions          # Auto suggestions like in fish
+zgenom load zsh-users/zsh-syntax-highlighting      # Syntax highlighting like in fish
+zgenom load zsh-users/zsh-history-substring-search # History search like in fish
 
-if ! zgenom saved; then
-  zgenom load olets/zsh-abbr
-  zgenom load zsh-users/zsh-autosuggestions          # Auto suggestions like in fish
-  zgenom load zsh-users/zsh-syntax-highlighting      # Syntax highlighting like in fish
-  zgenom load zsh-users/zsh-history-substring-search # History search like in fish
-
-  zgenom compile .zshrc
-  clear                                              # So I don't see the mess
-fi
+zgenom compile .zshrc
+clear                                              # So I don't see the mess
 
 source /home/sillyg/catppuccin/zsh-syntax-highlighting/themes/catppuccin_frappe-zsh-syntax-highlighting.zsh # Catppuccin for syntax highlighting cuz why not :3
 
@@ -48,7 +45,11 @@ autoload -Uz compinit && compinit
 zstyle ':completion:*' menu select # Open completion menu when tab is pressed twice
 
 
-# Keybindings bindkey -v          # Vi(m) keybinding export KEYTIMEOUT=5 # Faster esc key for vi(m) keybindings typeset -g -A key
+# Keybindings 
+
+bindkey -v          # Vi(m) keybinding
+export KEYTIMEOUT=5 # Faster esc key for vi(m) keybindings typeset -g -A key
+typeset -g -A key   # Dont know what this do but if I don't have it it breaks
 
 key[Home]="${terminfo[khome]}"    # Sets Home key
 key[End]="${terminfo[kend]}"      # Sets End key

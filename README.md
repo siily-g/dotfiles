@@ -1,3 +1,8 @@
+IMPORTATN!!!!
+I am switching to niri wm, and also an exam is coming up so expect commits to come less
+i will change the rest of the readme when im not lazy
+
+
 Hello everyone!
 
 Welcome to my dotfiles, right now it's not much but soon it'll grow.

@@ -13,10 +13,6 @@ Eitherway I'm talking to practically no one right now so bye
  - [x] .zshrc config
  - [x] starship prompt
  - [x] plugins
-##### Hyprland
- - [x] wallpaper
- - [x] hypridle + hyprlock
- - [ ] actually configure hyprland
 ##### Alacritty
  - [ ] fonts
 ##### Ags Astal

@@ -5,7 +5,7 @@ Eitherway I'm talking to practically no one right now so bye
 
 Things I'm (gonnna) use:
 - Wm: fht-compositor
-- Bar: Astal
+- Bar: Waybar (Astal once i figure out typescript)
 - Terminal Emulator: Alacritty
 - App launcher: Anyrun
 - Notif: Swaync

@@ -11,9 +11,6 @@ zgenom load zsh-users/zsh-history-substring-search # History search like in fish
 zgenom compile .zshrc
 clear                                              # So I don't see the mess
 
-source /home/sillyg/catppuccin/zsh-syntax-highlighting/themes/catppuccin_frappe-zsh-syntax-highlighting.zsh # Catppuccin for syntax highlighting cuz why not :3
-
-
 # Basic Setopts and Unsetopts
 setopt autocd               # Automatically change directory when only file path is given
 setopt interactivecomments  # Allows comments in interactive shells 
@@ -37,7 +34,7 @@ SAVEHIST=100000
 
 # Variables
 export BROWSER="librewolf"
-export EDITOR="nvim"
+export EDITOR="emacsclient -t"
 
 
 # Autocompletion
@@ -47,7 +44,7 @@ zstyle ':completion:*' menu select # Open completion menu when tab is pressed tw
 
 # Keybindings 
 
-bindkey -v          # Vi(m) keybinding
+bindkey -e          # Vi(m) keybinding
 export KEYTIMEOUT=5 # Faster esc key for vi(m) keybindings typeset -g -A key
 typeset -g -A key   # Dont know what this do but if I don't have it it breaks
 

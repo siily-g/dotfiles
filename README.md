@@ -10,7 +10,6 @@ Things I'm (gonnna) use:
 - App launcher: Anyrun
 - Notif: Swaync
 - Text Editor: Emacs
-- Browser: Zen browser
 - Keyboard Manager: Kmonad
 
 

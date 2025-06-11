@@ -14,4 +14,4 @@ Things I'm (gonnna) use:
 - Keyboard Manager: Kmonad
 
 
-..and more! 
+...................and more! 

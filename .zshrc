@@ -9,7 +9,7 @@ zgenom load zsh-users/zsh-syntax-highlighting      # Syntax highlighting like in
 zgenom load zsh-users/zsh-history-substring-search # History search like in fish
 
 zgenom compile .zshrc
-clear                                              # So I don't see the mess
+clear
 
 # Basic Setopts and Unsetopts
 setopt autocd               # Automatically change directory when only file path is given
@@ -33,8 +33,7 @@ SAVEHIST=100000
 
 
 # Variables
-export BROWSER="librewolf"
-export EDITOR="emacsclient -t"
+export EDITOR="emacsclient -c"
 
 
 # Autocompletion
@@ -78,10 +77,10 @@ key[Shift-Tab]="${terminfo[cbt]}" # Sets <Shift-Tab> key combination
 
 # Basic commands
 alias grep="grep --color=auto"                                                   # Alias because actually I don't know how to explain it
-# abbr --force ls="eza -TF --group-directories-first -L 3 --icons --git"         # eza is better ls, tree view the file with depth level 2, file type indicator, files first, icons and git
-# abbr --force lsa="eza -ATF --group-directories-first -L 3 --icons --git"       # allat above but almost all
-# abbr --force ll="eza -hlbmTUF --group-directories-first -L 3 --icons --git"    # like below but not all
-# abbr --force lla="eza -hlbmTUAF --group-directories-first -L 3 --icons --git"  # shows heading, long display, file size, time of creation and modification, almost all files, add file type indicator, files first, icon and git compatible
+# abbr --force ls="eza -TF --group-directories-first -L 2 --icons --git"         # eza is better ls, tree view the file with depth level 2, file type indicator, files first, icons and git
+# abbr --force lsa="eza -ATF --group-directories-first -L 2 --icons --git"       # allat above but almost all
+# abbr --force ll="eza -hlbmTUF --group-directories-first -L 2 --icons --git"    # like below but not all
+# abbr --force lla="eza -hlbmTUAF --group-directories-first -L 2 --icons --git"  # shows heading, long display, file size, time of creation and modification, almost all files, add file type indicator, files first, icon and git compatible
 
 # Clear
 # abbr --force c="clear;fastfetch;echo 'Arch is the best!'"                      # Make it easy and fast to clear, fastfetch, and say truth ;) https://wiki.archlinux.org/title/Arch_is_the_best
@@ -93,9 +92,6 @@ alias grep="grep --color=auto"                                                  
 # abbr --force gtca="git commit -am"
 # abbr --force gtp="git push origin"
 
-# Vpn
-# abbr --force vpnstart="wg-quick up /etc/wireguard/ne.conf"                     
-# abbr --force vpnstop="wg-quick down /etc/wireguard/ne.conf"                   
 
 # Run these at start
 fastfetch

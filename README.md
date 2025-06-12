@@ -5,13 +5,14 @@ Eitherway I'm talking to practically no one right now so bye
 
 Things I'm (gonnna) use:
 - Shell: Zsh
-- Wm: Hyprland
-- Bar: Waybar (Astal once i figure out typescript)
 - Terminal Emulator: Alacritty
+- Wm: Hyprland
 - App launcher: Anyrun
-- Notif: Swaync
 - Text Editor: Emacs
+- Bar: AGS Astal
+- Notif: Swaync
 - Keyboard Manager: Kmonad
+- Terminal Multiplexer: Tmux
 
 
 ...................and more! 

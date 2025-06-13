@@ -82,14 +82,16 @@ alias cl="clear"
 
 # Git
 alias gts="git status"
-alias gtc="git commit -m '"
-alias gtca="git commit -am '"
+alias gtc="git commit -m "
+alias gtca="git commit -am "
 alias gtp="git push origin"
 alias gta="git add"
 alias gtr="git rm"
 
 # Run these at start
-
+#!/bin/zsh -f
+setopt extendedglob
+print -- $(echoti setaf 2) ${$(<<<${${${(@j: :)${(@s:_:)${:-What_Linux_is_the_best?}}}/* (#b)([A-Z]i)/Arch $match[1]}} tr '?' '!')} $terminfo[sgr0] # https://wiki.archlinux.org/title/Arch_is_the_best
 
 
 

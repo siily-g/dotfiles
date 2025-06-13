@@ -94,7 +94,6 @@ alias grep="grep --color=auto"                                                  
 
 
 # Run these at start
-fastfetch
 #!/bin/zsh -f
 setopt extendedglob
 print -- $(echoti setaf 2) ${$(<<<${${${(@j: :)${(@s:_:)${:-What_Linux_is_the_best?}}}/* (#b)([A-Z]i)/Arch $match[1]}} tr '?' '!')} $terminfo[sgr0] # https://wiki.archlinux.org/title/Arch_is_the_best

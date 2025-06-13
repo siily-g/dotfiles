@@ -87,6 +87,7 @@ alias gtca="git commit -am "
 alias gtp="git push origin"
 alias gta="git add"
 alias gtr="git rm"
+alias gtd="git diff"
 
 # Run these at start
 #!/bin/zsh -f

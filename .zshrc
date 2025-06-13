@@ -3,7 +3,7 @@ source "${HOME}/.zgenom/zgenom.zsh"
 # Check for plugin and zgenom updates every 7 days
 zgenom autoupdate
 
-zgenom load olets/zsh-abbr                         # Abbreviations, better alias
+
 zgenom load zsh-users/zsh-autosuggestions          # Auto suggestions like in fish
 zgenom load zsh-users/zsh-syntax-highlighting      # Syntax highlighting like in fish
 zgenom load zsh-users/zsh-history-substring-search # History search like in fish
@@ -72,29 +72,24 @@ key[Shift-Tab]="${terminfo[cbt]}" # Sets <Shift-Tab> key combination
 [[ -n "${key[Shift-Tab]}" ]] && bindkey -- "${key[Shift-Tab]}"  menu-complete                  # For completion menu
 
 
-# Abbreviations, like aliases but better
-# Commented out, uncomment once to have a similar setup
+# Aliases
 
 # Basic commands
-alias grep="grep --color=auto"                                                   # Alias because actually I don't know how to explain it
-# abbr --force ls="eza -TF --group-directories-first -L 2 --icons --git"         # eza is better ls, tree view the file with depth level 2, file type indicator, files first, icons and git
-# abbr --force lsa="eza -ATF --group-directories-first -L 2 --icons --git"       # allat above but almost all
-# abbr --force ll="eza -hlbmTUF --group-directories-first -L 2 --icons --git"    # like below but not all
-# abbr --force lla="eza -hlbmTUAF --group-directories-first -L 2 --icons --git"  # shows heading, long display, file size, time of creation and modification, almost all files, add file type indicator, files first, icon and git compatible
-
-# Clear
-# abbr --force c="clear;fastfetch;echo 'Arch is the best!'"                      # Make it easy and fast to clear, fastfetch, and say truth ;) https://wiki.archlinux.org/title/Arch_is_the_best
-# abbr --force cl="clear"                                                        # The same as above, but just clears
+alias grep="grep --color=auto"
+alias ls="ls --color=auto"
+alias c="clear;fastfetch;echo 'Arch is the best!'"
+alias cl="clear"
 
 # Git
-# abbr --force gts="git status"    
-# abbr --force gtc="git commit -m"
-# abbr --force gtca="git commit -am"
-# abbr --force gtp="git push origin"
-
+alias gts="git status"
+alias gtc="git commit -m '"
+alias gtca="git commit -am '"
+alias gtp="git push origin"
+alias gta="git add"
+alias gtr="git rm"
 
 # Run these at start
-#!/bin/zsh -f
-setopt extendedglob
-print -- $(echoti setaf 2) ${$(<<<${${${(@j: :)${(@s:_:)${:-What_Linux_is_the_best?}}}/* (#b)([A-Z]i)/Arch $match[1]}} tr '?' '!')} $terminfo[sgr0] # https://wiki.archlinux.org/title/Arch_is_the_best
+
+
+
 

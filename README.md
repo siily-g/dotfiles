@@ -7,7 +7,7 @@ Things I'm (gonnna) use:
 - Shell: Zsh
 - Terminal Emulator: Alacritty
 - Wm: Hyprland
-- App launcher: Anyrun
+- App launcher: Ulauncher
 - Text Editor: Emacs
 - Bar: AGS Astal
 - Notif: Swaync

@@ -96,3 +96,6 @@ print -- $(echoti setaf 2) ${$(<<<${${${(@j: :)${(@s:_:)${:-What_Linux_is_the_be
 
 
 
+
+# Created by `pipx` on 2025-06-14 06:32:24
+export PATH="$PATH:/home/sillyg/.local/bin"

@@ -30,13 +30,13 @@
 
     altn (tap-hold-next-release 200 n lalt)
     mete (tap-hold-next-release 200 e rmet)
-    ctli (tap-hold-next-release 200 l rctl)
+    ctli (tap-hold-next-release 200 i rctl)
     sfto (tap-hold-next-release 200 o rsft)
 
     lignr-lyr (layer-toggle left-ignore)
     rignr-lyr (layer-toggle right-ignore)
-    lignr (tap-hold-next-release 200 d @lignr-lyr)
-    rignr (tap-hold-next-release 200 h @rignr-lyr)
+    lignr (tap-hold-next-release 200 h @lignr-lyr)
+    rignr (tap-hold-next-release 200 d @rignr-lyr)
 
     aignr (layer-switch all-ignore)
     qwty (layer-switch qwerty)

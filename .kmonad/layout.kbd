@@ -30,31 +30,33 @@
 
     altn (tap-hold-next-release 200 n lalt)
     mete (tap-hold-next-release 200 e rmet)
-    ctll (tap-hold-next-release 200 l rctl)
+    ctli (tap-hold-next-release 200 l rctl)
     sfto (tap-hold-next-release 200 o rsft)
 
-    lignr (layer-toggle left-ignore)
-    rignr (layer-toggle right-ignore)
+    lignr-lyr (layer-toggle left-ignore)
+    rignr-lyr (layer-toggle right-ignore)
+    lignr (tap-hold-next-release 200 d @lignr-lyr)
+    rignr (tap-hold-next-release 200 h @rignr-lyr)
 
     aignr (layer-switch all-ignore)
     qwty (layer-switch qwerty)
-    clmk (layer-switch tarmak4)
+    clmk (layer-switch colemak)
 )
 
-(deflayer tarmak4
-  esc    f1    f2    f3    f4      f5   f6   f7    f8    f9     f10   f11    f12  ins  prnt del
-  grv    1     2     3     4       5    6    7     8     9      0     -      =    caps      home
-  tab    q     w     f     p       g    j    u     i     y      ;     [      ]    \         pgup
-  bspc   @sfta @ctlr @mets @altt   d    h    @altn @mete @ctll  @sfto '      ret            pgdn
-  @rignr z     x     c     v       b    k    m     ,     .      /     @lignr           up   end   
-  lctl   lmet  lalt                spc             ralt  @aignr                   left down rght
+(deflayer colemak
+  esc    f1    f2    f3    f4      f5     f6     f7    f8    f9     f10   f11    f12  ins  prnt del
+  grv    1     2     3     4       5      6      7     8     9      0     -      =    caps      home
+  tab    q     w     f     p       g      j      l     u     y      ;     [      ]    \         pgup
+  bspc   @sfta @ctlr @mets @altt   @rignr @lignr @altn @mete @ctli  @sfto '      ret            pgdn
+  lsft   z     x     c     v       b      k      m     ,     .      /     rsft             up   end   
+  lctl   lmet  lalt                spc                 ralt  @aignr                   left down rght
 )
 
 (deflayer left-ignore
   esc  f1   f2   f3   f4   f5   f6   f7    f8    f9    f10   f11  f12  ins  prnt del
   grv  1    2    3    4    5    6    7     8     9     0     -    =    caps      home
-  tab  q    w    f    p    g    j    u     i     y     ;     [    ]    \         pgup
-  bspc a    r    s    t    d    h    @altn @mete @ctll @sfto '    ret            pgdn
+  tab  q    w    f    p    g    j    l     u     y     ;     [    ]    \         pgup
+  bspc a    r    s    t    d    h    @altn @mete @ctli @sfto '    ret            pgdn
   lsft z    x    c    v    b    k    m     ,     .     /     rsft           up   end   
   lctl lmet lalt           spc             ralt  rctl                  left down rght
 )
@@ -62,8 +64,8 @@
 (deflayer right-ignore
   esc  f1    f2    f3    f4      f5   f6   f7   f8   f9   f10  f11  f12  ins  prnt del
   grv  1     2     3     4       5    6    7    8    9    0    -    =    caps      home
-  tab  q     w     f     p       g    j    u    i    y    ;    [    ]    \         pgup
-  bspc @sfta @ctlr @mets @altt   d    h    n    e    l    o    '    ret            pgdn
+  tab  q     w     f     p       g    j    l    u    y    ;    [    ]    \         pgup
+  bspc @sfta @ctlr @mets @altt   d    h    n    e    i    o    '    ret            pgdn
   lsft z     x     c     v       b    k    m    ,    .    /    rsft           up   end   
   lctl lmet  lalt                spc            ralt rctl                left down rght
 )
@@ -71,8 +73,8 @@
 (deflayer all-ignore
   esc  f1   f2   f3   f4   f5   f6   f7   f8   f9    f10  f11  f12  ins  prnt del
   grv  1    2    3    4    5    6    7    8    9     0    -    =    caps      home
-  tab  q    w    f    p    g    j    u    i    y     ;    [    ]    \         pgup
-  bspc a    r    s    t    d    h    n    e    l     o    '    ret            pgdn
+  tab  q    w    f    p    g    j    l    u    y     ;    [    ]    \         pgup
+  bspc a    r    s    t    d    h    n    e    i     o    '    ret            pgdn
   lsft z    x    c    v    b    k    m    ,    .     /    rsft           up   end
   lctl lmet lalt           spc            ralt @qwty                left down rght
 )

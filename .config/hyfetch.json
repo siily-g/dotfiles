@@ -1,8 +1,8 @@
 {
     "preset": "transgender",
     "mode": "rgb",
-    "light_dark": "light",
-    "lightness": 0.65,
+    "light_dark": "dark",
+    "lightness": 0.75,
     "color_align": {
         "mode": "horizontal",
         "custom_colors": [],

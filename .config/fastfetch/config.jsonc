@@ -24,24 +24,29 @@
         },
         {
             "type": "cpu",
-            "key": "│ ├",
+            "key": "│ ",
             "keyColor": "green"
         },
         {
             "type": "gpu",
-            "key": "│ ├󰍛",
+            "key": "│ 󰍛",
             "keyColor": "green"
         },
         {
             "type": "memory",
-            "key": "│ ├󰍛",
+            "key": "│ 󰍛",
             "keyColor": "green"
         },
         {
             "type": "disk",
-            "key": "└ └",
+            "key": "│ ",
             "keyColor": "green"
         },
+	{
+            "type": "battery",
+	    "key": "└ ",
+	    "keyColor": "green"
+	},
         {
             "type": "custom",
             "format": "\u001b[90m└────────────────────────────────────────────────────┘"
@@ -131,10 +136,6 @@
             "type": "custom",
             "format": "\u001b[90m└─────────────────────────────────────────────────────────┘"
         },
-
-//        {
-//            "type": "colors"
-//        },
 
         {
             "type": "colors",

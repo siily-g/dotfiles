@@ -41,9 +41,13 @@ autoload -Uz compinit && compinit
 zstyle ':completion:*' menu select # Open completion menu when tab is pressed twice
 
 
+# Show that a command is unavailable because the package is not installed
+source /usr/share/doc/pkgfile/command-not-found.zsh
+
+
 # Keybindings 
 
-bindkey -e          # Vi(m) keybinding
+bindkey -e          # Emacs keybinding
 export KEYTIMEOUT=5 # Faster esc key for vi(m) keybindings typeset -g -A key
 typeset -g -A key   # Dont know what this do but if I don't have it it breaks
 
@@ -97,5 +101,3 @@ print -- $(echoti setaf 2) ${$(<<<${${${(@j: :)${(@s:_:)${:-What_Linux_is_the_be
 
 
 
-# Created by `pipx` on 2025-06-14 06:32:24
-export PATH="$PATH:/home/sillyg/.local/bin"

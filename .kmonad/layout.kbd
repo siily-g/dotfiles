@@ -23,15 +23,15 @@
 )
 
 (defalias
-    sfta (tap-hold-next-release 200 a lsft)
-    ctlr (tap-hold-next-release 200 r lctl)
-    mets (tap-hold-next-release 200 s lmet)
-    altt (tap-hold-next-release 200 t lalt)
+    a (tap-hold-next-release 200 a lmet)
+    r (tap-hold-next-release 200 r lalt)
+    s (tap-hold-next-release 200 s lctl)
+    t (tap-hold-next-release 200 t lsft)
 
-    altn (tap-hold-next-release 200 n lalt)
-    mete (tap-hold-next-release 200 e rmet)
-    ctli (tap-hold-next-release 200 i rctl)
-    sfto (tap-hold-next-release 200 o rsft)
+    n (tap-hold-next-release 200 n rsft)
+    e (tap-hold-next-release 200 e ctl)
+    i (tap-hold-next-release 200 i lalt)
+    o (tap-hold-next-release 200 o rmet)
 
     lignr-lyr (layer-toggle left-ignore)
     rignr-lyr (layer-toggle right-ignore)
@@ -51,30 +51,30 @@
 )
 
 (deflayer colemak
-  esc    f1    f2    f3    f4      f5     f6     f7    f8    f9     f10   f11    f12  ins  prnt del
-  grv    1     2     3     4       5      6      7     8     9      0     -      =    caps      home
-  tab    q     w     f     p       g      j      l     u     y      ;     [      ]    \         pgup
-  bspc   @sfta @ctlr @mets @altt   @rignr @lignr @altn @mete @ctli  @sfto '      ret            pgdn
-  lsft   z     x     c     @extv    b      k      @extm ,     .      /     rsft             up   end   
-  lctl   lmet  lalt                spc                 ralt  @aignr                   left down rght
+  esc    f1   f2   f3   f4    f5     f6     f7    f8   f9     f10  f11  f12  ins  prnt del
+  grv    1    2    3    4     5      6      7     8    9      0    -    =    caps      home
+  tab    q    w    f    p     g      j      l     u    y      ;    [    ]    \         pgup
+  bspc   @a   @r   @s   @t    @rignr @lignr @n    @e   @i     @o   '    ret            pgdn
+  lsft   z    x    c    @extv b      k      @extm ,    .      /    rsft           up   end   
+  lctl   lmet lalt            spc                 ralt @aignr                left down rght
 )
 
 (deflayer left-ignore
-  esc  f1   f2   f3   f4   f5   f6   f7    f8    f9    f10   f11  f12  ins  prnt del
-  grv  1    2    3    4    5    6    7     8     9     0     -    =    caps      home
-  tab  q    w    f    p    g    j    l     u     y     ;     [    ]    \         pgup
-  bspc a    r    s    t    d    h    @altn @mete @ctli @sfto '    ret            pgdn
-  lsft z    x    c    v    b    k    m     ,     .     /     rsft           up   end   
-  lctl lmet lalt           spc             ralt  rctl                  left down rght
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  ins  prnt del
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    caps      home
+  tab  q    w    f    p    g    j    l    u    y    ;    [    ]    \         pgup
+  bspc a    r    s    t    d    h    @n   @e   @i   @o   '    ret            pgdn
+  lsft z    x    c    v    b    k    m    ,    .    /    rsft           up   end   
+  lctl lmet lalt           spc            ralt rctl                left down rght
 )
 
 (deflayer right-ignore
-  esc  f1    f2    f3    f4      f5   f6   f7   f8   f9   f10  f11  f12  ins  prnt del
-  grv  1     2     3     4       5    6    7    8    9    0    -    =    caps      home
-  tab  q     w     f     p       g    j    l    u    y    ;    [    ]    \         pgup
-  bspc @sfta @ctlr @mets @altt   d    h    n    e    i    o    '    ret            pgdn
-  lsft z     x     c     v       b    k    m    ,    .    /    rsft           up   end   
-  lctl lmet  lalt                spc            ralt rctl                left down rght
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  ins  prnt del
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    caps      home
+  tab  q    w    f    p    g    j    l    u    y    ;    [    ]    \         pgup
+  bspc @a   @r   @s   @t   d    h    n    e    i    o    '    ret            pgdn
+  lsft z    x    c    v    b    k    m    ,    .    /    rsft           up   end   
+  lctl lmet lalt           spc            ralt rctl                left down rght
 )
 
 (deflayer all-ignore

@@ -24,27 +24,27 @@
         },
         {
             "type": "cpu",
-            "key": "├ ",
+            "key": "├  CPU",
             "keyColor": "green"
         },
         {
             "type": "gpu",
-            "key": "├ 󰍛",
+            "key": "├ 󰍛 GPU",
             "keyColor": "green"
         },
         {
             "type": "memory",
-            "key": "├ 󰍛",
+            "key": "├ 󰍛 RAM",
             "keyColor": "green"
         },
         {
             "type": "disk",
-            "key": "├ ",
+            "key": "├  Storage",
             "keyColor": "green"
         },
 	{
             "type": "battery",
-	    "key": "└ ",
+	    "key": "└  Battery",
 	    "keyColor": "green"
 	},
         {
@@ -63,22 +63,22 @@
         },
         {
             "type": "kernel",
-            "key": "├ ",
+            "key": "├  Kernel",
             "keyColor": "yellow"
         },
         {
             "type": "bios",
-            "key": "├ ",
+            "key": "├  BIOS",
             "keyColor": "yellow"
         },
         {
             "type": "packages",
-            "key": "├ 󰏖",
+            "key": "├ 󰏖 Packages",
             "keyColor": "yellow"
         },
         {
             "type": "shell",
-            "key": "└ ",
+            "key": "└  Shell",
             "keyColor": "yellow"
         },
         "break",
@@ -89,12 +89,12 @@
         },
         {
             "type": "lm",
-            "key": "├ ",
+            "key": "├  DM",
             "keyColor": "blue"
         },
         {
             "type": "wm",
-            "key": "├ ",
+            "key": "├  WM",
             "keyColor": "blue"
         },
         {
@@ -104,7 +104,7 @@
         },
         {
             "type": "terminal",
-            "key": "└ ",
+            "key": "└  Terminal",
             "keyColor": "blue"
         },
         {
@@ -118,18 +118,18 @@
         },
         {
             "type": "command",
-            "key": "  OS Age ",
+            "key": "  󱦟 OS Age ",
             "keyColor": "magenta",
             "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
         },
         {
             "type": "uptime",
-            "key": "  Uptime ",
+            "key": "   Uptime ",
             "keyColor": "magenta"
         },
         {
             "type": "datetime",
-            "key": "  DateTime ",
+            "key": "   DateTime ",
             "keyColor": "magenta"
         },
         {

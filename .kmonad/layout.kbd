@@ -23,15 +23,15 @@
 )
 
 (defalias
-    a (tap-hold-next-release 200 a lmet)
-    r (tap-hold-next-release 200 s lalt)
-    s (tap-hold-next-release 200 d lctl)
-    t (tap-hold-next-release 200 f lsft)
+    lmet (tap-hold-next-release 200 a lmet)
+    lalt (tap-hold-next-release 200 s lalt)
+    lctl (tap-hold-next-release 200 d lctl)
+    lsft (tap-hold-next-release 200 f lsft)
 
-    n (tap-hold-next-release 200 j rsft)
-    e (tap-hold-next-release 200 k rctl)
-    i (tap-hold-next-release 200 l lalt)
-    o (tap-hold-next-release 200 ; rmet)
+    rsft (tap-hold-next-release 200 j rsft)
+    rctl (tap-hold-next-release 200 k rctl)
+    ralt (tap-hold-next-release 200 l lalt)
+    rmet (tap-hold-next-release 200 ; rmet)
 
     lignr-lyr (layer-toggle left-ignore)
     rignr-lyr (layer-toggle right-ignore)
@@ -53,7 +53,7 @@
   esc    f1   f2   f3   f4    f5     f6     f7    f8   f9     f10  f11  f12  ins  prnt del
   grv    1    2    3    4     5      6      7     8    9      0    -    =    caps      home
   tab    q    w    e    r     t      y      u     i    o      p    [    ]    \         pgup
-  bspc   @a   @r   @s   @t    @rignr @lignr @n    @e   @i     @o   '    ret            pgdn
+  bspc   @   @r   @s   @t    @rignr @lignr @n    @e   @i     @o   '    ret            pgdn
   lsft   z    x    c    @extv b      n      @extm ,    .      /    rsft           up   end   
   lctl   lmet lalt            spc                 ralt @aignr                left down rght
 )

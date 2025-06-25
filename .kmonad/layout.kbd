@@ -33,11 +33,6 @@
     ralt (tap-hold-next-release 200 l lalt)
     rmet (tap-hold-next-release 200 ; rmet)
 
-    lignr-lyr (layer-toggle left-ignore)
-    rignr-lyr (layer-toggle right-ignore)
-    lignr (tap-hold-next-release 200 h @lignr-lyr)
-    rignr (tap-hold-next-release 200 g @rignr-lyr)
-
     aignr (layer-switch all-ignore)
     main (layer-switch main)
 
@@ -49,31 +44,13 @@
     tmx C-b
 )
 
-(deflayer main
-  esc    f1   f2   f3   f4    f5     f6     f7    f8   f9     f10  f11  f12  ins  prnt del
-  grv    1    2    3    4     5      6      7     8    9      0    -    =    caps      home
-  tab    q    w    e    r     t      y      u     i    o      p    [    ]    \         pgup
-  bspc   @   @r   @s   @t    @rignr @lignr @n    @e   @i     @o   '    ret            pgdn
-  lsft   z    x    c    @extv b      n      @extm ,    .      /    rsft           up   end   
-  lctl   lmet lalt            spc                 ralt @aignr                left down rght
-)
-
-(deflayer left-ignore
-  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  ins  prnt del
-  grv  1    2    3    4    5    6    7    8    9    0    -    =    caps      home
-  tab  q    w    f    p    g    j    l    u    y    ;    [    ]    \         pgup
-  bspc a    r    s    t    d    h    @n   @e   @i   @o   '    ret            pgdn
-  lsft z    x    c    v    b    k    m    ,    .    /    rsft           up   end   
-  lctl lmet lalt           spc            ralt rctl                left down rght
-)
-
-(deflayer right-ignore
-  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  ins  prnt del
-  grv  1    2    3    4    5    6    7    8    9    0    -    =    caps      home
-  tab  q    w    f    p    g    j    l    u    y    ;    [    ]    \         pgup
-  bspc @a   @r   @s   @t   d    h    n    e    i    o    '    ret            pgdn
-  lsft z    x    c    v    b    k    m    ,    .    /    rsft           up   end   
-  lctl lmet lalt           spc            ralt rctl                left down rght
+(deflayer main 
+  esc    f1    f2    f3    f4    f5   f6   f7    f8    f9     f10   f11  f12  ins  prnt del
+  grv    1     2     3     4     5    6    7     8     9      0     -    =    caps      home
+  tab    q     w     e     r     t    y    u     i     o      p     [    ]    \         pgup
+  bspc   @lmet @lalt @lctl @lsft d    h    @rsft @rctl @ralt  @rmet '    ret            pgdn
+  lsft   z     x     c     @extv b    n    @extm ,     .      /     rsft           up   end   
+  lctl   lmet  lalt              spc             ralt  @aignr                left down rght
 )
 
 (deflayer all-ignore

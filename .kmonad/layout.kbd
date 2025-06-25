@@ -24,19 +24,19 @@
 
 (defalias
     a (tap-hold-next-release 200 a lmet)
-    r (tap-hold-next-release 200 r lalt)
-    s (tap-hold-next-release 200 s lctl)
-    t (tap-hold-next-release 200 t lsft)
+    r (tap-hold-next-release 200 s lalt)
+    s (tap-hold-next-release 200 d lctl)
+    t (tap-hold-next-release 200 f lsft)
 
-    n (tap-hold-next-release 200 n rsft)
-    e (tap-hold-next-release 200 e ctl)
-    i (tap-hold-next-release 200 i lalt)
-    o (tap-hold-next-release 200 o rmet)
+    n (tap-hold-next-release 200 j rsft)
+    e (tap-hold-next-release 200 k rctl)
+    i (tap-hold-next-release 200 l lalt)
+    o (tap-hold-next-release 200 ; rmet)
 
     lignr-lyr (layer-toggle left-ignore)
     rignr-lyr (layer-toggle right-ignore)
     lignr (tap-hold-next-release 200 h @lignr-lyr)
-    rignr (tap-hold-next-release 200 d @rignr-lyr)
+    rignr (tap-hold-next-release 200 g @rignr-lyr)
 
     aignr (layer-switch all-ignore)
     main (layer-switch main)
@@ -52,9 +52,9 @@
 (deflayer main
   esc    f1   f2   f3   f4    f5     f6     f7    f8   f9     f10  f11  f12  ins  prnt del
   grv    1    2    3    4     5      6      7     8    9      0    -    =    caps      home
-  tab    q    w    f    p     g      j      l     u    y      ;    [    ]    \         pgup
+  tab    q    w    e    r     t      y      u     i    o      p    [    ]    \         pgup
   bspc   @a   @r   @s   @t    @rignr @lignr @n    @e   @i     @o   '    ret            pgdn
-  lsft   z    x    c    @extv b      k      @extm ,    .      /    rsft           up   end   
+  lsft   z    x    c    @extv b      n      @extm ,    .      /    rsft           up   end   
   lctl   lmet lalt            spc                 ralt @aignr                left down rght
 )
 
@@ -81,7 +81,7 @@
   grv  1    2    3    4    5    6    7    8    9     0    -    =    caps      home
   tab  q    w    f    p    g    j    l    u    y     ;    [    ]    \         pgup
   bspc a    r    s    t    d    h    n    e    i     o    '    ret            pgdn
-  lssft z    x    c    v    b    k    m    ,    .     /    rsft           up   end
+  lsft z    x    c    v    b    k    m    ,    .     /    rsft           up   end
   lctl lmet lalt           spc            ralt @main                left down rght
 )
 

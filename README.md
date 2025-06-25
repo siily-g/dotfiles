@@ -1,3 +1,5 @@
+### Notice: expect this dotfiles to be scrapped, i'm switching to either kde or cosmic now
+
 Hello everyone!
 
 Welcome to my dotfiles, right now it's not much but soon it'll grow.

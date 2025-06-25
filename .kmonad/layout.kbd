@@ -39,7 +39,7 @@
     rignr (tap-hold-next-release 200 d @rignr-lyr)
 
     aignr (layer-switch all-ignore)
-    clmk (layer-switch colemak)
+    main (layer-switch main)
 
     ;; Extend layers
     ext-lyr (layer-toggle extend)
@@ -49,7 +49,7 @@
     tmx C-b
 )
 
-(deflayer colemak
+(deflayer main
   esc    f1   f2   f3   f4    f5     f6     f7    f8   f9     f10  f11  f12  ins  prnt del
   grv    1    2    3    4     5      6      7     8    9      0    -    =    caps      home
   tab    q    w    f    p     g      j      l     u    y      ;    [    ]    \         pgup
@@ -82,7 +82,7 @@
   tab  q    w    f    p    g    j    l    u    y     ;    [    ]    \         pgup
   bspc a    r    s    t    d    h    n    e    i     o    '    ret            pgdn
   lssft z    x    c    v    b    k    m    ,    .     /    rsft           up   end
-  lctl lmet lalt           spc            ralt @clmk                left down rght
+  lctl lmet lalt           spc            ralt @main                left down rght
 )
 
 

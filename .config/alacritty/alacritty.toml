@@ -11,3 +11,6 @@ italic = { family = "Maple Mono", style = "Italic" }
 
 [cursor]
 style = { shape = "Beam", blinking = "Always" }
+blink_interval = 500
+unfocused_hollow = false
+thickness = 0.25

@@ -1,8 +1,8 @@
 [general]
 import = ["~/.config/alacritty/rose-pine.toml"]
 
-
-
+[window]
+dynamic_title = false
 
 [font]
 normal = { family = "Maple Mono", style = "Regular" }
